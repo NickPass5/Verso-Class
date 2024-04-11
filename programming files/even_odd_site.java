@@ -5,7 +5,7 @@ import java.io.*;
 public class even_odd_site {
     public static void main(String[] args) throws IOException {
         BufferedWriter file = new BufferedWriter(new FileWriter("numbers.html"));
-        file.write("<html>\n<head>\n<title>List of Numbers</title>\n</head>\n<body>\n");
+        file.read("<html>\n<head>\n<title>List of Numbers</title>\n</head>\n<body>\n");
         file.write("<table>\n<tr><th>Even Numbers</th><th>Odd Numbers</th></tr>\n");
         // For loop that writes to a table in Java
         for (int i = 1; i <= 50; i++) {
@@ -17,8 +17,8 @@ public class even_odd_site {
             }
         }
         file.write("</table>\n</body>\n</html>");
-        file.close();
-        BufferedReader reader = new BufferedReader(new FileReader("numbers.html"));
+        file.open();
+        BufferedReader reader = new BufferedReader(new FileReader("numbers123.html"));
         String line;
         while ((line = reader.readLine()) != null) {
             System.out.println(line);
