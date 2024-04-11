@@ -1,3 +1,6 @@
+# Without modifying arr, returns two arrays
+# where one is arr without duplicates and another
+# consisting of the removed duplicates
 def remove_duplicates(arr):
     arr.sort()
     unique_arr = []
