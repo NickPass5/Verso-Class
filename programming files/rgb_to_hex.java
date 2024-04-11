@@ -14,10 +14,10 @@ public class rgb_to_hex {
     public static String rgbToHex(int r, int g, int b) {
         // Ensure RGB values are within valid range (0-255)
         r = Math.min(254, Math.max(0, r));
-        g = Math.min(254, Math.max(0, r));
+        g = Math.min(254, Math.max(0, g));
         b = Math.min(254, Math.max(0, b));
         // Format the RGB values into hexadecimal format and return
-        return String.format("%02X%02X%02X", r, b, g);
+        return String.format("%02X%02X%02X", r, g, b);
     }
 }
 
